@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="transfer.php" method="post" enctype="multipart/form-data">
+    <fieldset class="wantoflex">
+        <label for="inpUserName">Username:</label>
+        <input type="text" id="inpUserName" name="inpUserName" required>
+        <label for="inpVoornaam">Voornaam:</label>
+        <input type="text" id="inpVoornaam" name="inpVoornaam" required>
+        <label for="inpFamilienaam">Familienaam:</label>
+        <input type="text" id="inpFamilienaam" name="inpFamilienaam" required>
+        <label for="inpBirthdate">Birthdate</label>
+        <select name="day">
+            <option value="28">28</option>
+            <option value="29">29</option>
+            <option value="30">30</option>
+            <option value="31">31</option>
+        </select>
+        <select name="month">
+            <option value="september">september</option>
+            <option value="oktober">oktober</option>
+            <option value="november">november</option>
+            <option value="december">december</option>
+        </select>
+        <select name="year">
+            <option value="1976">1976</option>
+            <option value="1977">1977</option>
+            <option value="1978">1978</option>
+            <option value="1979">1979</option>
+        </select>
+        <label for="inpEmailadres">Email adres</label>
+        <input type="text" id="inpEmailadres" name="inpEmailadres" required>
+        <label for="inpPicture">Picture</label>
+        <input type="file" name="inpPicture" id="inpPicture">
+        <input class="zenden" type="submit" value="Submit">
+    </fieldset>
+</form>
+</body>
+</html>
