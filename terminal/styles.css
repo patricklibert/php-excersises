@@ -1,0 +1,44 @@
+body {
+    background-color: black;
+    background-image: radial-gradient(
+            rgba(0, 150, 0, 0.75), black 120%
+    );
+    height: 100vh;
+    color: white;
+    font: 0.8rem Inconsolata, monospace;
+    text-shadow: 0 0 5px #C8C8C8;
+}
+
+
+
+
+input, input:focus {
+    background-color: rgba(0,0,0,0.0);
+    color: white;
+    border: none;
+    outline: none;
+    font: 0.8rem Inconsolata, monospace;
+}
+
+
+.cursor {
+   display: flex;
+   flex-direction: row;
+    flex-wrap: nowrap;
+}
+.cursor i {
+    position: absolute;
+    width: 1px;
+    height: 80%;
+    background-color: white;
+    left: 5px;
+    top: 10%;
+    animation-name: blink;
+    animation-duration: 800ms;
+    animation-iteration-count: infinite;
+    opacity: 1;
+}
+
+.cursor input:focus + i {
+    display: none;
+}

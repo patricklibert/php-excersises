@@ -53,8 +53,8 @@ function combineNames($str1 = "", $str2 = "") {
     $test = array();
     foreach($params as $param) {
         if ($param == "") {
-            $param = randomGenerate($test;
-            //array_push($test,$param);
+            $param = randomHeroName();
+            array_push($test,$param);
         }
     }
 
