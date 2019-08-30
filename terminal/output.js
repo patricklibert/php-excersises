@@ -1,6 +1,3 @@
-
-
-
 function setCookieOutput(arg) {
     var readnameoutput = "commandooutput" + "=";
     console.log(typeof document.cookie);
@@ -24,10 +21,6 @@ function setCookieOutput(arg) {
     }
     commandoOutputIndexer = Object.keys(commandsoutput).length;
     commandsoutput["commandooutput" + commandoOutputIndexer] = arg;
-    //alert(someText);
-
     var varcookieoutput = 'commandooutput' + '=' + JSON.stringify(commandsoutput);
-    //
     document.cookie = varcookieoutput;
-
 }

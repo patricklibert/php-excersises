@@ -1,7 +1,6 @@
 <?php
 include "terminal.php";
 ?>
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -15,38 +14,19 @@ include "terminal.php";
         var commandoOutputIndexer = 0;
     </script>
     <script src="output.js"></script>
-
     <title>Terminal</title>
 </head>
 <body>
     <div id="listcommands">
-
     </div>
 
     <div id="responsecommands">
-
         <?php if(isset($_POST['fname'])) {
             $command = $_POST['fname'];
             $OneTerminal = new terminal();
             $returncommand = $OneTerminal->execute($command);
-
-            
-
-
-
         }  ?>
-
-
-
-
-
-
     </div>
-
-
-
-
-
     <form action="" method="POST" name="keysubmit" autocomplete="off" id="myform">
         <div class="cursor">
             <label id="prompt">redman@redman-XPS-13-9360:/var/www/ubuntu/php-excersises/terminal$ </label>
@@ -57,7 +37,6 @@ include "terminal.php";
     <script>
         document.onkeydown = function() {
             if (window.event.key === "Enter") {
-
                 writecookie();
                 document.forms['myform'].submit();
             }
@@ -66,30 +45,14 @@ include "terminal.php";
     <script src="script.js"></script>
     <?php if (isset($_POST['fname'])) {
     echo '<script>',
-
-            'setCookieOutput("' . $returncommand . '");',
-
-
+         'setCookieOutput("' . $returncommand . '");',
          'console.log(document.cookie);',
-
-
-
-
-   '</script>';
+        '</script>';
     }
-
-?>
-
-
-
-
+    ?>
     <script>
         let someText = "<?php echo $returncommand ?>";
-        //someText = someText.replace(/(\r\n|\n|\r)/gm," ");
-        //console.log(someText);
-       // document.getElementById("prompt").style.display = "none";
         showText("#white", someText, 0, 20);
-
     </script>
 </body>
 </html>

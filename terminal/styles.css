@@ -8,10 +8,6 @@ body {
     font: 0.8rem Inconsolata, monospace;
     text-shadow: 0 0 5px #C8C8C8;
 }
-
-
-
-
 input, input:focus {
     background-color: rgba(0,0,0,0.0);
     color: white;
@@ -19,8 +15,6 @@ input, input:focus {
     outline: none;
     font: 0.8rem Inconsolata, monospace;
 }
-
-
 .cursor {
    display: flex;
    flex-direction: row;
@@ -38,7 +32,9 @@ input, input:focus {
     animation-iteration-count: infinite;
     opacity: 1;
 }
-
 .cursor input:focus + i {
     display: none;
+}
+#prompt {
+    margin-right: 5px;
 }
